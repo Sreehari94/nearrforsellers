@@ -43,7 +43,8 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 150px 0; } 
+     }
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -525,4 +526,46 @@ ul.social-buttons {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+}
+.howitwork-card{
+  padding:20px;
+  border-radius: 20px;
+  background-color: #fed136;
+  color:white;
+  margin-left:20px;
+  margin-right:20px;
+  display:flex;
+  align-items:center;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 30px;
+}
+.card-icon{
+  border-left:1px solid white;
+  display:flex;
+  align-items:center;
+}
+.card-icon2{
+  border-right:1px solid white;
+  display:flex;
+  align-items:center;
+}
+.howitwork-card2{
+  padding:20px;
+  border-radius: 20px;
+  background-color: #f4511e;
+  color:white;
+  margin-left:20px;
+  margin-right:20px;
+  display:flex;
+  align-items:center;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 500px) {
+    .card-icon {
+        display: none!important;
+    }
+    .card-icon2{
+      display: none!important;
+    }
 }
