@@ -522,7 +522,18 @@ ul.social-buttons {
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.signup-btn:hover{
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
