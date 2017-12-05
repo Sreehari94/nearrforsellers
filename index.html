@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Connect with customers & Sell your products on nearr. Be a seller on nearr. Increase visibility of your business across the North-east region with millions of customers.">
+    <meta name="keywords" content="seller,nearr,nearr.in,seller on nearr,ecommerce,north-east seller,shopping">
 
-    <title>nearrforsellers</title>
+    <title>nearrforsellers - Be a seller on nearr</title>
+
+    <meta property="og:title" content="nearrforsellers - Be a seller on nearr" />
+    <meta property="og:image" content="img/favicon.png" />
+    <meta property="og:description" content="Connect with customers & Sell your products on nearr. Be a seller on nearr.Increase visibility of your business across the North-east region with millions of customers." />
+    <meta property="og:site_name" content="nearrforsellers - Be a seller on nearr" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,16 +55,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services" onclick="showWhyNearrSection()">Why Nearr</a>
+              <a class="nav-link js-scroll-trigger" href="#services" onclick="showWhyNearrSection()" title="Why Nearr">Why Nearr</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#howitwork" onclick="showHowItWorkSection()">How it Works</a>
+              <a class="nav-link js-scroll-trigger" href="#howitwork" onclick="showHowItWorkSection()" title="How it Works">How it Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact" onclick="showContactSection()">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" onclick="showContactSection()" title="Contact Us">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger open-survey" href="#" data="https://form.responster.com/0AvG1E" onclick="showRequestCallbackForm()">Request Callback</a>
+              <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target="#myModal" onclick="showRequestCallbackForm()" title="Request a callback from us">Request Callback</a>
             </li>
           </ul>
         </div>
@@ -72,7 +77,7 @@
         <div class="intro-text">
           <div class="intro-lead-in">Connect with customers & Sell your products on nearr</div>
           <div class="intro-heading text-uppercase">Be a seller on nearr</div>
-          <button class="open-survey signup-btn" data="form.responster.com/0AvG1E" onclick="showRequestCallbackForm()">Request Callback</button>
+          <button class="signup-btn" data-toggle="modal" data-target="#myModal" onclick="showRequestCallbackForm()" title="Request a callback from us">Request Callback</button>
         </div>
       </div>
     </header>
@@ -270,8 +275,8 @@
               <p style="color:#fed136;font-size:20px;font-weight:bold;">Ready to be a seller on nearr?</p>
               <p style="color:#fed136;font-size:20px;font-weight:bold;">Have any queries regarding anything?</p>
               <p style="color:white;font-size:16px;">Give us a call or send us an email and<br/>we will get back to you as soon as possible!</p>
-              <p style="color:white;font-size:16px;"><i class="fa fa-envelope"></i>&nbsp;&nbsp;manab@nearr.in</p>
-              <p style="color:white;font-size:16px;"><i class="fa fa-phone"></i>&nbsp;&nbsp;+91-8447197409</p>
+              <p style="color:white;font-size:16px;"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@nearr.in" title="Get in touch with us" target="_blank" onclick="contactMailLink()" style="color:white;">info@nearr.in</a></p>
+              <p style="color:white;font-size:16px;"><i class="fa fa-phone"></i>&nbsp;&nbsp;+91-8638431807</p>
             </center>
           </div>
           <!-- <div class="col-sm-6">
@@ -320,6 +325,48 @@
       </div>
     </footer>
 
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Request Callback Form</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form action="https://getform.org/f/c2a7b234-aec5-4266-b6f6-3f460cd89b9e" method="POST">
+              <div class="form-group row">
+                <div class="col">
+                  <label for="name">Name:<i style="color:red">*</i></label>
+                </div>
+                <div class="col">
+                  <input type="text" name="name" required>
+                </div> 
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <label for="email">Email address:<i style="color:red">*</i></label>
+                </div>
+                <div class="col">
+                  <input type="email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <label for="email">Mobile:<i style="color:red">*</i></label>
+                </div>
+                <div class="col">
+                  <input type="text" name="phone" required>
+                 </div> 
+              </div>
+              <center> 
+                <button class="submit-button" type="submit" onclick="showRequestCallbackForm()">Submit</button> 
+               </center> 
+              <!-- <input type="submit"> --> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

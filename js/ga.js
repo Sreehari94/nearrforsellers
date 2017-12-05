@@ -21,6 +21,12 @@ showRequestCallbackForm=function() {
         hitType: "event", eventCategory: "SellerRequestCallBackForm", eventAction: "User clicked on request callback form button", eventLabel: "USER_CLICKED_ON_REQUEST_CALLBACK_LINK", eventValue: 0
     }
     )
+},
+contactMailLink=function() {
+    ga("send", {
+        hitType: "event", eventCategory: "ContactMailLink", eventAction: "User clicked on conatct mail link", eventLabel: "USER_CLICKED_ON_CONTACT_MAIL_LINK", eventValue: 0
+    }
+    )
 };
 
 
