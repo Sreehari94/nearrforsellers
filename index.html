@@ -333,7 +333,11 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            <form action="https://getform.org/f/c2a7b234-aec5-4266-b6f6-3f460cd89b9e" method="POST">
+            <div class="cognito">
+              <script src="https://services.cognitoforms.com/s/-eNVTyOLZUSvcJpgeVQQFg"></script>
+              <script>Cognito.load("forms", { id: "1" });</script>
+            </div>
+            <!-- <form action="https://getform.org/f/c2a7b234-aec5-4266-b6f6-3f460cd89b9e" method="POST">
               <div class="form-group row">
                 <div class="col">
                   <label for="name">Name:<i style="color:red">*</i></label>
@@ -361,8 +365,8 @@
               <center> 
                 <button class="submit-button" type="submit" onclick="showRequestCallbackForm()">Submit</button> 
                </center> 
-              <!-- <input type="submit"> --> 
-            </form>
+               
+            </form> -->
           </div>
         </div>
       </div>
